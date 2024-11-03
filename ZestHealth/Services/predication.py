@@ -1,5 +1,5 @@
 import joblib
-from nlp_model_training_utils.Classifier import classify_input
+from ZestHealth.nlp_model_training_utils.Classifier import classify_input
 
 model = joblib.load("./trained_model/model.pkl")
 vectorizer = joblib.load("./trained_model/vectorizer.pkl")
