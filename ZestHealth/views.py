@@ -4,7 +4,8 @@ from django.http import JsonResponse
 from ZestHealth.Services.predication import prediction
 import json
 
-# @csrf_exempt
+
+@csrf_exempt
 def ask(request):
     if request.method == "POST":
         data = json.loads(request.body.decode("utf-8"))
